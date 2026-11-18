@@ -11,7 +11,7 @@ function App() {
           name="Iman Rawat"
           studentId="202637455"
           major="Computer Engineering"
-          year={2}
+          year={1}
           gpa={4.0}
         />
 
@@ -19,7 +19,7 @@ function App() {
           name="Anish Tamang"
           studentId="202637595"
           major="Computer Engineering"
-          year={2}
+          year={1}
           gpa={4.40}
         />
 
@@ -27,7 +27,7 @@ function App() {
           name="Bishal Bohora"
           studentId="202637594"
           major="Computer Engineering"
-          year={2}
+          year={1}
           gpa={3.60}
         />
       </div>
