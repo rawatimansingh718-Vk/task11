@@ -1,0 +1,78 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef2f7;
+  color: #243047;
+}
+
+.app-container {
+  min-height: 100vh;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.app-container h1 {
+  font-size: 32px;
+  margin-bottom: 35px;
+  color: #19345c;
+}
+
+.student-list {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.profile-card {
+  width: 300px;
+  padding: 24px;
+  background: white;
+  border: 2px solid #cbd5e1;
+  border-radius: 16px;
+  text-align: left;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  border-color: #3975c6;
+}
+
+.card-header {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #dbe3ee;
+}
+
+.student-name {
+  margin: 0 0 10px;
+  font-size: 22px;
+  color: #24569a;
+}
+
+.student-id {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.card-body {
+  padding-top: 12px;
+}
+
+.card-body p {
+  margin: 12px 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.card-body strong {
+  color: #19345c;
+}
