@@ -11,7 +11,7 @@ function StudentProfileCard({ name, studentId, major, year, gpa }) {
         <p><strong>Year:</strong> {year}</p>
         <p><strong>GPA:</strong> {gpa}</p>
       </div>
-    </div>
+    </article>
   );
 }
 
