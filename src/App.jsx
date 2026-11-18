@@ -6,57 +6,76 @@ import Card from './Card';
 function App() {
   return (
     <div className="app-container">
-      <h1>Student Directory</h1>
 
-      <div className="student-list">
-        <StudentProfileCard
+      <h1>🎓 Student Directory</h1>
+
+      <section className="exercise-section">
+        <h2>👨‍🎓 Student Profile Cards</h2>
+        <div className="student-list">
+          <StudentProfileCard
+            name="Iman Rawat"
+            studentId="202637455"
+            major="Computer Engineering"
+            year={1}
+            gpa={4.0}
+          />
+
+          <StudentProfileCard
+            name="Anish Tamang"
+            studentId="202637595"
+            major="Computer Engineering"
+            year={1}
+            gpa={4.40}
+          />
+
+          <StudentProfileCard
+            name="Bishal Bohora"
+            studentId="202637594"
+            major="Computer Engineering"
+            year={1}
+            gpa={3.60}
+          />
+        </div>
+      </section>
+
+      <h1>⚛ React Components & Props — Practice</h1>
+
+      <section className="exercise-section">
+        <h2>01 — ProfileCard (Default Props)</h2>
+        <p>A reusable profile card with a default avatar image.</p>
+        <ProfileCard
           name="Iman Rawat"
-          studentId="202637455"
-          major="Computer Engineering"
-          year={1}
-          gpa={4.0}
+          role="Computer Engineering Student"
+          email="rawatimansingh718@gmail.com"
         />
+      </section>
 
-        <StudentProfileCard
-          name="Anish Tamang"
-          studentId="202637595"
-          major="Computer Engineering"
-          year={1}
-          gpa={4.40}
-        />
+      <section className="exercise-section">
+        <h2>02 — NotificationList (Lists & Conditional Rendering)</h2>
+        <p>Notifications displayed using map(), key, and conditional icons.</p>
+        <NotificationList />
+      </section>
 
-        <StudentProfileCard
-          name="Bishal Bohora"
-          studentId="202637594"
-          major="Computer Engineering"
-          year={1}
-          gpa={3.60}
-        />
-      </div>
+      <section className="exercise-section">
+        <h2>03 — Card (props.children)</h2>
+        <p>A reusable card that accepts different content as children.</p>
 
-      <h1>React Practice Exercises</h1>
+        <Card title="Lecture Topics">
+          <ul>
+            <li>React Components</li>
+            <li>Props</li>
+          </ul>
+        </Card>
 
-      <h2>Exercise 1: ProfileCard</h2>
-      <ProfileCard
-        name="Iman Rawat"
-        role="Computer Engineering Student"
-        email="rawatimansingh718@gmail.com"
-      />
+        <Card title="Homework">
+          <p>Build a student portfolio component.</p>
+        </Card>
+      </section>
 
-      <h2>Exercise 2: NotificationList</h2>
-      <NotificationList />
+      <p style={{ textAlign: 'center', color: '#64748b', marginTop: 40 }}>
+        Web Programming · Week 11 · React Components & Props
+      </p>
 
-      <h2>Exercise 3: Card and props.children</h2>
-      <Card title="Lecture Topics">
-        <ul>
-          <li>React Components</li>
-          <li>Props</li>
-        </ul>
-      </Card>
-
-      <Card title="Homework">
-        <p>Build a student portfolio component.</p>
-      </Card>
     </div>
   );
 }
