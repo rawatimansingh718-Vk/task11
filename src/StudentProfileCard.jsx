@@ -1,6 +1,6 @@
 function StudentProfileCard({ name, studentId, major, year, gpa }) {
   return (
-    <div className="profile-card">
+<article className="profile-card">   
       <div className="card-header">
         <h2 className="student-name">{name}</h2>
         <span className="student-id">ID: {studentId}</span>
