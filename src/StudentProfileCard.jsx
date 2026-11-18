@@ -2,7 +2,7 @@ function StudentProfileCard({ name, studentId, major, year, gpa }) {
   return (
 <article className="profile-card">   
       <div className="card-header">
-        <h2 className="student-name">{name}</h2>
+        <h2 className="student-name" aria-label={`Student name: ${name}`}>{name}</h2>
         <span className="student-id">ID: {studentId}</span>
       </div>
 
